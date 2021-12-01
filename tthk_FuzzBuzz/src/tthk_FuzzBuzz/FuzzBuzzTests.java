@@ -12,5 +12,9 @@ class FizzBuzzTests {
     public void multipleOfThreeReturnFizz(){
         assertEquals(FuzzBuzz.of(3), ("Fizz"));
     }
+    
+    public void multipleOfFiveReturnBuzz(){
+        assertEquals(FuzzBuzz.of(5), ("Buzz"));
+    }
 
 }

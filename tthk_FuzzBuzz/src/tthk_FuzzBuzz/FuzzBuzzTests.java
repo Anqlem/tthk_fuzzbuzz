@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FizzBuzzTests {
 
-	public void shouldReturn0() {
+	public void should100() {
         assertEquals(FuzzBuzz.of(0), ("0"));
     }
 

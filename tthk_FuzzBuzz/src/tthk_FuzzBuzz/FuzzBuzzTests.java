@@ -2,24 +2,23 @@ package tthk_FuzzBuzz;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
 class FizzBuzzTests {
 
-	@BeforeEach
-	void setUp() throws Exception {
-	}
+	public void should100() {
+        assertEquals(FuzzBuzz.of(0), ("0"));
+    }
+	
 
-	@AfterEach
-	void tearDown() throws Exception {
-	}
-
-	@Test
-	void shouldReturnOneHundredNumbers() {
-		FuzzBuzz fb=new FuzzBuzz();
-		assertEquals(100, fb.getNumbers().length);
-	}
+    public void multipleOfThreeReturnFizz(){
+        assertEquals(FuzzBuzz.of(3), ("Fizz"));
+    }
+    
+    public void multipleOfFiveReturnBuzz(){
+        assertEquals(FuzzBuzz.of(5), ("Buzz"));
+    }
+    
+    public void multipleOfFiveAndThreeReturnFizzBuzz(){
+        assertEquals(FuzzBuzz.of(15), ("FizzBuzz"));
+    }
 
 }
